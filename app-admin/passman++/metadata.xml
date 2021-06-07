@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>roachh@protonmail.com</email>
+		<name>Carson Rueter</name>
+	</maintainer>
+	<longdescription>passman++ creates secure databases for passwords, encrypted using tried-and-true encryption standards and optionally a key file.</longdescription>
+</pkgmetadata>
