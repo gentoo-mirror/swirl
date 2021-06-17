@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>roachh@protonmail.com</email>
+		<name>swirl</name>
+	</maintainer>
+	<longdescription>An implementation of a well known cryptographic ratchet in C++</longdescription>
+</pkgmetadata>
