@@ -1,0 +1,15 @@
+BDEPEND=virtual/rust >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install test unpack
+DEPEND=virtual/libc
+DESCRIPTION=Simple terminal image viewer.
+EAPI=7
+HOMEPAGE=https://github.com/atanunq/viu
+INHERIT=rust-toolchain git-r3
+IUSE=abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=virtual/libc
+SLOT=0
+_eclasses_=multibuild	6b3d5ee849dafe6cdfd7b859c211fb01	multilib	ebdbaed22e873a5abe6205f41349b479	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib-build	c311a933538fe97b72600926696ea66f	rust-toolchain	f8649e83cfccc3989141e2437a787c88	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=8d33fbe83e1b74d3bc1bc59b8fb52dec

@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/go >=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install test unpack
+DEPEND=virtual/libc
+DESCRIPTION=Discord TUI Client - Fork of Cordless
+EAPI=7
+HOMEPAGE=https://github.com/yellowsink/gord
+INHERIT=golang-build git-r3
+KEYWORDS=~amd64 ~x86
+LICENSE=AGPL-3
+PROPERTIES=live
+RDEPEND=virtual/libc
+RESTRICT=strip
+SLOT=0
+_eclasses_=golang-base	b8fb27dacacea08140c53857f439fc7d	golang-build	91472d4e18894e738c69b415e236a664	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=2e96cb9e52b8bbd9f6dabcc277ce8ca5

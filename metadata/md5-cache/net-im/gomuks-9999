@@ -1,0 +1,16 @@
+BDEPEND=>=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install test unpack
+DEPEND=encryption? ( dev-libs/olm )
+DESCRIPTION=A terminal based Matrix client written in Go
+EAPI=7
+HOMEPAGE=https://github.com/tulir/gomuks
+INHERIT=golang-build git-r3
+IUSE=+encryption
+KEYWORDS=~amd64 ~x86
+LICENSE=AGPL-3
+PROPERTIES=live
+RDEPEND=encryption? ( dev-libs/olm )
+RESTRICT=strip
+SLOT=0
+_eclasses_=golang-base	b8fb27dacacea08140c53857f439fc7d	golang-build	91472d4e18894e738c69b415e236a664	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=3169f2445996e71cb17b2ed7e4e3a0e3
