@@ -29,10 +29,9 @@ EOF
 Do this after either of the previous options.
 ```bash
 emaint sync --repo swirl
-
-# unmask stuff
-echo '*/*::swirl ~amd64' >> /etc/portage/package.accept_keywords
 ```
 
 # Notes
 passman++ and libpassman require Qt 6, which currently has not been merged to the Gentoo Qt project upstream (see [gentoo/qt#224](https://github.com/gentoo/qt/pull/224)).
+
+All packages are marked with the `~amd64` keyword, so to install packages, the desired version must be unmasked--see the portage manpage for this.
