@@ -34,4 +34,7 @@ emaint sync --repo swirl
 # Notes
 passman++ and libpassman require Qt 6, which currently has not been merged to the Gentoo Qt project upstream (see [gentoo/qt#224](https://github.com/gentoo/qt/pull/224)).
 
-All packages are marked with the `~amd64` keyword, so to install packages, the desired version must be unmasked--see the portage manpage for this.
+If you want development versions of packages, simply unmask version `9999` of the packages you want:
+```bash
+# echo "=category/package-9999 ~amd64" >> /etc/portage/package.accept_keywords
+```
