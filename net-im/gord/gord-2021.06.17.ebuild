@@ -15,6 +15,7 @@ HOMEPAGE="https://github.com/yellowsink/${PN}"
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="https://github.com/yellowsink/${PN}/archive/${_PV}.tar.gz -> ${_P}.tar.gz"
 	S="${WORKDIR}/${_P}"
+	KEYWORDS="amd64 x86 ~arm64 ~ppc64"
 else
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/yellowsink/${PN}"
