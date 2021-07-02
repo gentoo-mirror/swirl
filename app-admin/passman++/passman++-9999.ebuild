@@ -13,6 +13,7 @@ HOMEPAGE="https://github.com/binex-dsk/${_PN}"
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="https://github.com/binex-dsk/${_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${P}"
+	KEYWORDS="amd64 x86 ~arm64 ~ppc64"
 else
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/binex-dsk/${_PN}"
@@ -21,7 +22,6 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 
 DEPEND="dev-libs/libpassman dev-libs/botan dev-qt/qtbase"
 RDEPEND="${DEPEND}"
