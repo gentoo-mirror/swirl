@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/binex-dsk/${_PN}"
 
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="https://github.com/binex-dsk/${_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/${P}"
+	S="${WORKDIR}/${_PN}-${PV}"
 	KEYWORDS="amd64 x86 ~arm64 ~ppc64"
 else
 	inherit git-r3
