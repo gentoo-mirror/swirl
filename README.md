@@ -36,5 +36,5 @@ passman++ and libpassman require Qt 6, which currently has not been merged to th
 
 If you want development versions of packages, simply unmask version `9999` of the packages you want:
 ```bash
-# echo "=category/package-9999 ~amd64" >> /etc/portage/package.accept_keywords
+# echo "=category/package-9999 **" >> /etc/portage/package.accept_keywords
 ```
