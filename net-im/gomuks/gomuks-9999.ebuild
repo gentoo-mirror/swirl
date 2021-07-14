@@ -23,7 +23,7 @@ IUSE="+encryption"
 
 DEPEND="encryption? ( dev-libs/olm )"
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="dev-lang/go"
 
 src_compile() {
 	use encryption || export CGO_ENABLED=0

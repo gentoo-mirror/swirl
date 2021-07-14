@@ -26,7 +26,7 @@ SLOT="0"
 
 DEPEND="virtual/libc"
 RDEPEND="${DEPEND}"
-BDEPEND="dev-libs/go"
+BDEPEND="dev-lang/go"
 
 src_compile() {
 	go build

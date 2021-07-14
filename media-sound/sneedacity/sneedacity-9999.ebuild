@@ -75,6 +75,7 @@ src_prepare() {
 src_configure() {
 	setup-wxwidgets
 	append-cxxflags -std=gnu++14
+	append-cxxflags -I /usr/include/wx-${WX_GTK_VER}
 
 	# * always use system libraries if possible
 	# * options listed in the order that cmake-gui lists them
