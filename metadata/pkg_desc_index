@@ -6,4 +6,4 @@ dev-libs/olm 3.2.4 9999: An implementation of a well known cryptographic ratchet
 media-gfx/viu 1.3.0 9999: Simple terminal image viewer.
 media-sound/sneedacity 9999: Audacity fork without any telemetry
 net-im/gomuks 0.2.3 9999: A terminal based Matrix client written in Go
-net-im/gord 2021.06.17 9999: Discord TUI Client - Fork of Cordless
+net-im/gord 2021.06.17 2021.07.14 9999: Discord TUI Client - Fork of Cordless

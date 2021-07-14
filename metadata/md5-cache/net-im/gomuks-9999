@@ -1,4 +1,4 @@
-BDEPEND=>=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-lang/go >=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install test unpack
 DEPEND=encryption? ( dev-libs/olm )
 DESCRIPTION=A terminal based Matrix client written in Go
@@ -12,4 +12,4 @@ RDEPEND=encryption? ( dev-libs/olm )
 RESTRICT=strip
 SLOT=0
 _eclasses_=golang-base	b8fb27dacacea08140c53857f439fc7d	golang-build	91472d4e18894e738c69b415e236a664	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=8b0d060383cbecc2fa1560ce8278e1ce
+_md5_=7b47a7c715a063aebdcc2acbe3ec536b

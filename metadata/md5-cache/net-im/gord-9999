@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/go >=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-lang/go >=dev-lang/go-1.10 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install test unpack
 DEPEND=virtual/libc
 DESCRIPTION=Discord TUI Client - Fork of Cordless
@@ -11,4 +11,4 @@ RDEPEND=virtual/libc
 RESTRICT=strip
 SLOT=0
 _eclasses_=golang-base	b8fb27dacacea08140c53857f439fc7d	golang-build	91472d4e18894e738c69b415e236a664	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=8aa50046f0a0dd3136e3536c671fd91b
+_md5_=359793d8b40c85efac736ccde14b3aa3
