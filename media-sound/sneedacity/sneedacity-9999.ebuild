@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-WX_GTK_VER="3.0"
+WX_GTK_VER="3.0-gtk3"
 
 inherit cmake flag-o-matic wxwidgets xdg
 
@@ -59,6 +59,7 @@ DEPEND="${RDEPEND}"
 BDEPEND="app-arch/unzip
 	sys-devel/gettext
 	virtual/pkgconfig
+	dev-util/conan
 "
 
 REQUIRED_USE="portmidi? ( portsmf )"
@@ -74,6 +75,7 @@ src_prepare() {
 src_configure() {
 	setup-wxwidgets
 	append-cxxflags -std=gnu++14
+	append-cxxflags -I /usr/include/wx-${WX_GTK_VER}
 
 	# * always use system libraries if possible
 	# * options listed in the order that cmake-gui lists them
