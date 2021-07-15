@@ -59,23 +59,22 @@ DEPEND="${RDEPEND}"
 BDEPEND="app-arch/unzip
 	sys-devel/gettext
 	virtual/pkgconfig
-	dev-util/conan
 "
 
 REQUIRED_USE="portmidi? ( portsmf )"
 
-PATCHES=(
-	"${FILESDIR}"/${PN}.patch
-)
-
 src_prepare() {
 	cmake_src_prepare
+
+	if [[ "${PV}" == 9999 ]]
+	then
+		git checkout conan_removal # conan bad
+	fi
 }
 
 src_configure() {
 	setup-wxwidgets
 	append-cxxflags -std=gnu++14
-	append-cxxflags -I /usr/include/wx-${WX_GTK_VER}
 
 	# * always use system libraries if possible
 	# * options listed in the order that cmake-gui lists them
@@ -108,7 +107,7 @@ src_configure() {
 		-Dsneedacity_use_vamp=$(usex vamp system off)
 		-Dsneedacity_use_vorbis=$(usex vorbis system off)
 		-Dsneedacity_use_vst=$(usex vst)
-		-Dsneedacity_use_wxwidgets=system
+		-Dsneedacity_use_wxwidgets=local # required, sneedacity needs wx >=3.1, Gentoo ships up to 3.0.5 currently
 	)
 
 	cmake_src_configure
