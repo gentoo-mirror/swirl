@@ -5,7 +5,5 @@
 		<email>swurl@swurl.xyz</email>
 		<name>swirl</name>
 	</maintainer>
-	<longdescription>urlview is a screen oriented program for extracting URLs from text
-    files and displaying a menu from which you may launch a command to view
-    a specific item.</longdescription>
+	<longdescription>A console based XMPP client inspired by Irssi</longdescription>
 </pkgmetadata>
