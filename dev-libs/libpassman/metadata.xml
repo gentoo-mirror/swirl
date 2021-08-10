@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
 <pkgmetadata>
 	<maintainer type="person">
-		<email>roachh@protonmail.com</email>
+		<email>swurl@swurl.xyz</email>
 		<name>Carson Rueter</name>
 	</maintainer>
 	<longdescription>libpassman is a powerful library providing interaction with passman++ databases, as well as several classes useful for 2FA, data encryption/decryption, and secure data storage.</longdescription>

@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
 <pkgmetadata>
 	<maintainer type="person">
-		<email>roachh@protonmail.com</email>
+		<email>swurl@swurl.xyz</email>
 		<name>swirl</name>
 	</maintainer>
 	<longdescription>An implementation of a well known cryptographic ratchet in C++</longdescription>
