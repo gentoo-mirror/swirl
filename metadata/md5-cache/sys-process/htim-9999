@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure postinst postrm prepare setup unpack
+DEPEND=sys-libs/ncurses:=[unicode(+)?] hwloc? ( sys-apps/hwloc ) lm-sensors? ( sys-apps/lm-sensors ) || ( dev-lang/python:3.9 dev-lang/python:3.8 )
+DESCRIPTION=fork of htop with vim keybindings and visual mode
+EAPI=7
+HOMEPAGE=https://gitlab.com/thelinuxguy9/htim
+INHERIT=autotools linux-info python-any-r1 xdg-utils git-r3
+IUSE=debug hwloc kernel_FreeBSD kernel_linux lm-sensors openvz unicode vserver kernel_linux
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=sys-libs/ncurses:=[unicode(+)?] hwloc? ( sys-apps/hwloc ) lm-sensors? ( sys-apps/lm-sensors )
+SLOT=0
+_eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	libtool	241a8f577b9781a42a7421e53448a44e	autotools	c7052b276346587968d52ea8eaf5aca1	linux-info	a99e3ead651192b4866986c9640612da	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	python-utils-r1	08d890890f70fe0096093016e55438d5	python-any-r1	901d9e22c7a848a1196502edf060f330	xdg-utils	27f9a2f19502b925ac117bd657aa2979	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=2477bf55b83bf2809597c84c5238af5a
