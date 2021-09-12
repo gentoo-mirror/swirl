@@ -6,8 +6,8 @@ EAPI=7
 inherit meson git-r3
 
 _PN="rofi"
-_PV="${PV}-wayland"
-_P="${_PN}-${_PV}"
+#_PV="${PV}-wayland"
+_P="${_PN}-${PV}"
 
 DESCRIPTION="Wayland fork of rofi, a window switcher, run dialog and dmenu replacement"
 HOMEPAGE="https://github.com/lbonn/${_PN}"
@@ -18,6 +18,8 @@ EGIT_SUBMODULES=( libgwater libnkutils )
 if [[ "${PV}" != 9999 ]] ; then
 	EGIT_COMMIT="${_PV}"
 	KEYWORDS="amd64 x86 ~arm64"
+else
+	KEYWORDS=""
 fi
 
 LICENSE="MIT"
@@ -41,7 +43,8 @@ DEPEND="${RDEPEND}
 	test? ( >=dev-libs/check-0.11 )
 "
 BDEPEND="${BDEPEND}
-	dev-libs/wayland-protocols"
+	dev-libs/wayland-protocols
+"
 
 src_configure() {
 	local emesonargs=(
