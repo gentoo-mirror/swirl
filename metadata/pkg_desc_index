@@ -12,4 +12,5 @@ net-im/profanity 0.11.0 9999: A console based XMPP client inspired by Irssi
 net-misc/urlview 0.9: extracts urls from text and will send them to another app
 net-misc/yt-dlp 2021.08.10: A youtube-dl fork with additional features and fixes
 sys-process/htim 9999: fork of htop with vim keybindings and visual mode
-x11-misc/rofi-wayland 1.7.0 9999: Wayland fork of rofi, a window switcher, run dialog and dmenu replacement
+x11-misc/rofi-wayland 1.6.1 1.7.0 9999: Wayland fork of rofi, a window switcher, run dialog and dmenu replacement
+x11-misc/rofi-wayland-calc 2.0.0: Do live calculations in rofi-wayland
