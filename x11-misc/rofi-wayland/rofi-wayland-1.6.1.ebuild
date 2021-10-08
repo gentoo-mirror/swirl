@@ -6,7 +6,7 @@ EAPI=7
 inherit meson git-r3
 
 _PN="rofi"
-_PV="${PV}+wayland1"
+#_PV="${PV}-wayland"
 _P="${_PN}-${PV}"
 
 DESCRIPTION="Wayland fork of rofi, a window switcher, run dialog and dmenu replacement"
