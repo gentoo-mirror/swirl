@@ -1,6 +1,11 @@
 # Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Credit for the main logic and functions:
+# https://git.swurl.xyz/PETERIX_ON_SUICIDE_WATCH/multimc-arch-package
+# Available as an AUR package:
+# https://aur.archlinux.org/packages/multimc-git/
+
 EAPI=7
 
 inherit git-r3 cmake desktop
@@ -15,13 +20,6 @@ SRC_URI="https://files.multimc.org/downloads/mmc-stable-lin64.tar.gz"
 S="${WORKDIR}/${PN}-${PV}"
 
 KEYWORDS="amd64 x86 ~arm64 ~ppc64"
-
-#PATCHES=(
-#		"${FILESDIR}/0001-Readd-lin-system-and-LAUNCHER_LINUX_DATADIR.patch"
-#		"${FILESDIR}/modern-java.patch"
-#		"${FILESDIR}/fix-jars.patch"
-#		"${FILESDIR}/mmc-brand.patch"
-#)
 
 LICENSE="Apache"
 SLOT="0"
@@ -44,14 +42,12 @@ src_unpack() {
 	git-r3_src_unpack
 }
 
-
 src_prepare() {
 	patch -p1 < "${FILESDIR}/0001-Readd-lin-system-and-LAUNCHER_LINUX_DATADIR.patch"
 	patch -p1 < "${FILESDIR}/modern-java.patch"
 	patch -p1 < "${FILESDIR}/fix-jars.patch"
 	patch -p1 < "${FILESDIR}/mmc-brand.patch"
 
-	_extract_token
 	local token=$(_extract_token)
 	sed -i 's/""/"'"${token}"'"/g' notsecrets/Secrets.cpp
 
@@ -61,11 +57,6 @@ src_prepare() {
 	do
 	mv "$f/multimc.svg" "$f/launcher.svg"
 	done
-
-	# pushd notsecrets
-	# cp "${FILESDIR}/Launcher/launcher/package/ubuntu/multimc/opt/multimc/icon.svg" ./logo.svg
-	# ./genicons.sh
-	# popd
 
 	git submodule init
 	git config submodule.libnbtplusplus.url "${WORKDIR}/libnbtplusplus"
