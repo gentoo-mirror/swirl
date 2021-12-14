@@ -57,7 +57,7 @@ src_prepare() {
 	do
 	mv "$f/multimc.svg" "$f/launcher.svg"
 	done
-	
+
 	cp launcher/resources/multimc/scalable/launcher.svg notsecrets/logo.svg
 
 	git submodule init
@@ -78,6 +78,7 @@ src_compile() {
 		-DLauncher_LAYOUT=lin-system \
 		-DLauncher_APP_BINARY_NAME="${PN}" \
 		-DLauncher_SHARE_DEST_DIR="share/${PN}" \
+		-DLauncher_LIBRARY_DEST_DIR="$(get_libdir)" \
 		..
 	emake
 
@@ -85,12 +86,13 @@ src_compile() {
 
 src_install() {
 	cd "build"
-	make install DESTDIR="${D}"
+	emake install DESTDIR="${D}"
 	cd ..
 
 	newicon "notsecrets/logo.svg" multimc.svg
 	domenu "${FILESDIR}/${PN}.desktop"
-	insinto /usr/$(get_libdir)
-	doins "build/libLauncher_quazip.so"
-	doins "build/libLauncher_nbt++.so"
+	#insinto /usr/$(get_libdir)
+	#cd build
+	#doins "libLauncher_quazip.so"
+	#doins "libLauncher_nbt++.so"
 }
