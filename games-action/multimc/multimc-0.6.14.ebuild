@@ -57,6 +57,8 @@ src_prepare() {
 	do
 	mv "$f/multimc.svg" "$f/launcher.svg"
 	done
+	
+	cp launcher/resources/multimc/scalable/launcher.svg notsecrets/logo.svg
 
 	git submodule init
 	git config submodule.libnbtplusplus.url "${WORKDIR}/libnbtplusplus"
@@ -86,7 +88,7 @@ src_install() {
 	make install DESTDIR="${D}"
 	cd ..
 
-	newicon "launcher/package/ubuntu/multimc/opt/multimc/icon.svg" multimc.svg
+	newicon "notsecrets/logo.svg" multimc.svg
 	domenu "${FILESDIR}/${PN}.desktop"
 	insinto /usr/$(get_libdir)
 	doins "build/libLauncher_quazip.so"
