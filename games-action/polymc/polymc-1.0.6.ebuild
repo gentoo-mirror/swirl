@@ -27,7 +27,7 @@ src_unpack() {
 }
 
 src_prepare() {
-#	git checkout ${PV}
+	git checkout ${PV}
 
 	git submodule init
 	git config submodule.libnbtplusplus.url "${WORKDIR}/libnbtplusplus"
