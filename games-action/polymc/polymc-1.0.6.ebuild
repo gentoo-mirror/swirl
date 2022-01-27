@@ -27,14 +27,7 @@ src_unpack() {
 }
 
 src_prepare() {
-	git checkout 6a4130c9149deb029b496c81e3b874ad834c54b7 -- launcher/resources/{{OSX,flat,iOS,multimc,pe_{blue,colored,dark,light}}/scalable/multimc.svg,multimc/{32x32,128x128}/instances/infinity.png}
-
-	for f in launcher/resources/{OSX,flat,iOS,multimc,pe_{blue,colored,dark,light}}/scalable
-	do
-	mv "$f/multimc.svg" "$f/launcher.svg"
-	done
-
-	cp launcher/resources/multimc/scalable/launcher.svg program_info/logo.svg
+#	git checkout ${PV}
 
 	git submodule init
 	git config submodule.libnbtplusplus.url "${WORKDIR}/libnbtplusplus"
@@ -63,8 +56,7 @@ src_compile() {
 src_install() {
 	cd "build"
 	emake install DESTDIR="${D}"
-	cd ..
+	cd ../program_info
 
-	newicon "program_info/logo.svg" polymc.svg
-	domenu "${FILESDIR}/${PN}.desktop"
+	doicon polymc.svg
 }
