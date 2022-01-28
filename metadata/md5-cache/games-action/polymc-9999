@@ -5,7 +5,6 @@ DESCRIPTION=Minecraft launcher with ability to manage multiple instances.
 EAPI=7
 HOMEPAGE=https://github.com/PolyMC/PolyMC
 INHERIT=git-r3 cmake desktop
-KEYWORDS=amd64 x86 ~arm64 ~ppc64
 LICENSE=Apache
 PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 virtual/jre sys-libs/zlib virtual/opengl
