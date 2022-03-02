@@ -22,7 +22,7 @@ fi
 LICENSE="Apache"
 SLOT="0"
 
-BDEPEND="virtual/jdk:1.8 media-gfx/inkscape media-gfx/imagemagick media-libs/libicns"
+BDEPEND="dev-qt/qttest-5.6.0:5 dev-qt/qtconcurrent-5.6.0:5 virtual/jdk:1.8 media-gfx/inkscape media-gfx/imagemagick media-libs/libicns"
 DEPEND="dev-qt/qtcore:5 virtual/jre sys-libs/zlib virtual/opengl"
 RDEPEND="${DEPEND}"
 
@@ -66,5 +66,5 @@ src_install() {
 	emake install DESTDIR="${D}"
 	cd ../program_info
 
-	doicon polymc.svg
+	doicon org.polymc.PolyMC.svg
 }
