@@ -19,7 +19,7 @@ else
 	KEYWORDS=""
 fi
 
-LICENSE="Apache"
+LICENSE="GPL-3"
 SLOT="0"
 
 BDEPEND="virtual/jdk:1.8 media-gfx/inkscape media-gfx/imagemagick media-libs/libicns"
