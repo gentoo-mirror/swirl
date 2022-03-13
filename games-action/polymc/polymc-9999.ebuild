@@ -8,7 +8,7 @@ inherit git-r3 cmake desktop
 DESCRIPTION="Minecraft launcher with ability to manage multiple instances."
 HOMEPAGE="https://github.com/PolyMC/PolyMC"
 
-EGIT_REPO_URI="https://github.com/PolyMC/PolyMC https://github.com/MultiMC/libnbtplusplus https://github.com/PolyMC/quazip"
+EGIT_REPO_URI="https://github.com/PolyMC/PolyMC https://github.com/MultiMC/libnbtplusplus https://github.com/stachenov/quazip"
 
 S="${WORKDIR}/${PN}-${PV}"
 
@@ -23,7 +23,7 @@ LICENSE="GPL-3"
 SLOT="0"
 
 BDEPEND="virtual/jdk:1.8 media-gfx/inkscape media-gfx/imagemagick media-libs/libicns"
-DEPEND="dev-qt/qtcore:5 virtual/jre sys-libs/zlib virtual/opengl"
+DEPEND="dev-qt/qtcore:5 virtual/jre sys-libs/zlib virtual/opengl dev-qt/qtconcurrent dev-qt/qttest"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
@@ -66,5 +66,5 @@ src_install() {
 	emake install DESTDIR="${D}"
 	cd ../program_info
 
-	doicon polymc.svg
+	doicon org.polymc.PolyMC.svg
 }
