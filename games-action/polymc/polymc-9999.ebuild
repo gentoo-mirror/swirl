@@ -22,8 +22,29 @@ fi
 LICENSE="GPL-3"
 SLOT="0"
 
-BDEPEND="virtual/jdk:1.8 media-gfx/inkscape media-gfx/imagemagick media-libs/libicns"
-DEPEND="dev-qt/qtcore:5 virtual/jre sys-libs/zlib virtual/opengl dev-qt/qtconcurrent dev-qt/qttest"
+QT_DEPS="
+	>=dev-qt/qtcore-5.6.0:5
+	>=dev-qt/qttest-5.6.0:5
+	>=dev-qt/qtconcurrent-5.6.0:5
+	>=dev-qt/qtgui-5.6.0:5
+	>=dev-qt/qtnetwork-5.6.0:5
+	>=dev-qt/qtwidgets-5.6.0:5
+	>=dev-qt/qtxml-5.6.0:5
+"
+
+BDEPEND="
+	${QT_DEPS}
+	sys-libs/zlib
+	virtual/jdk
+	media-libs/libglvnd
+"
+
+DEPEND="
+	${QT_DEPS}
+	virtual/jre
+	virtual/opengl
+"
+
 RDEPEND="${DEPEND}"
 
 src_unpack() {
@@ -52,7 +73,7 @@ src_compile() {
 	cd build
 	cmake -DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX="/usr" \
-		-DLauncher_LAYOUT=lin-system \
+		-DLauncher_PORTABLE=0 \
 		-DLauncher_APP_BINARY_NAME="${PN}" \
 		-DLauncher_SHARE_DEST_DIR="share/${PN}" \
 		-DLauncher_LIBRARY_DEST_DIR="$(get_libdir)" \
