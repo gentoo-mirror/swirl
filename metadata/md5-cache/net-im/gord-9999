@@ -10,5 +10,5 @@ PROPERTIES=live
 RDEPEND=virtual/libc
 RESTRICT=strip
 SLOT=0
-_eclasses_=golang-base	f4a1ee401e37bc147718f5520597c734	golang-build	92d1748dabd81be93033602713a7dafa	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=golang-base	d5b6a1d72a3e93ee380d44eb9a5ba614	golang-build	92d1748dabd81be93033602713a7dafa	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=359793d8b40c85efac736ccde14b3aa3
