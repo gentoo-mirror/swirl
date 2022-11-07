@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=encryption? ( dev-libs/olm )
 RESTRICT=strip
 SLOT=0
-_eclasses_=golang-base	9f0e420ab37bc55a318d74bab3aae891	golang-build	0bd4f7f8de6ac61b4224cb690c5ea321	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_eclasses_=golang-base	9f0e420ab37bc55a318d74bab3aae891	golang-build	0bd4f7f8de6ac61b4224cb690c5ea321	git-r3	2347f8fe2d392b2a091191f94be37e6f
 _md5_=7b47a7c715a063aebdcc2acbe3ec536b
