@@ -11,8 +11,3 @@ media-sound/sneedacity:sbsms - Enables sbsms library support for slower, more ac
 media-sound/sneedacity:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
 media-sound/sneedacity:vamp - Enables vamp plugins support (Audio analysing plugins)
 media-sound/sneedacity:vst - Enable VST plugin support
-sys-process/htim:hwloc - Use sys-apps/hwloc for CPU affinity support
-sys-process/htim:openvz - Enable openvz support
-sys-process/htim:vserver - Enable vserver support
-x11-misc/rofi-wayland:drun - Enable desktop file run dialog
-x11-misc/rofi-wayland:windowmode - Enable normal window mode

@@ -1,16 +1,3 @@
-app-admin/passman++ 2.1.1 9999: An extremely simple, minimal, and easy-to-use yet just as secure and powerful GUI password manager.
-app-shells/zsh-autosuggestions 0.7.0 9999: Fish-like autosuggestions for zsh
-app-shells/zsh-fast-syntax-highlighting 1.55: Optimized and extended syntax highlighting for zsh
-app-shells/zsh-history-substring-search 1.0.2 9999: ZSH port of Fish history search
-dev-libs/libpassman 2.1.1 9999: Library for interacting with passman++ database files.
-dev-libs/olm 3.2.4 9999: An implementation of a well known cryptographic ratchet in C++
+dev-libs/libpassman 2.1.1 2.2.0 9999: Library for interacting with passman++ database files.
 games-action/multimc 0.6.14: Minecraft launcher with ability to manage multiple instances.
 media-sound/sneedacity 9999: Audacity fork without any telemetry
-net-im/gajim 1.4.7: Jabber client written in PyGTK
-net-im/gomuks 0.2.3 9999: A terminal based Matrix client written in Go
-net-im/gord 2021.06.17 2021.07.14 9999: Discord TUI Client - Fork of Cordless
-net-im/profanity 0.11.0 9999: A console based XMPP client inspired by Irssi
-net-misc/yt-dlp 2021.08.10: A youtube-dl fork with additional features and fixes
-sys-process/htim 9999: fork of htop with vim keybindings and visual mode
-x11-misc/rofi-wayland 1.7.0 9999: Wayland fork of rofi, a window switcher, run dialog and dmenu replacement
-x11-misc/rofi-wayland-calc 2.0.0: Do live calculations in rofi-wayland
