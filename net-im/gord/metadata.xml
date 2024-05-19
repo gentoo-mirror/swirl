@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
-<pkgmetadata>
-	<maintainer type="person">
-		<email>swurl@swurl.xyz</email>
-		<name>swirl</name>
-	</maintainer>
-	<longdescription>Discord TUI Client - Fork of Cordless</longdescription>
-</pkgmetadata>
